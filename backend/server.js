@@ -37,7 +37,7 @@ app.post('/api/tareas', (req, res) => {
   res.status(201).json(nuevaTarea);
 });
 
-// 3. Eliminar una tarea (DELETE)
+
 app.delete('/api/tareas/:id', (req, res) => {
   const id = Number(req.params.id);
   tareas = tareas.filter(t => t.id !== id);
